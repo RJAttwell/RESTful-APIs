@@ -35,3 +35,27 @@ Specific pattern of routes/endpoints:
 Creating a Database with Robo 3T:
 - First thing is create data in database. 
 - A GUI commonly used with MongoDB is Robo 3T
+- Connect to local host in Studio 3T and you'll be able to see your DBs, collections and documents inside
+
+GET Articles:
+- app.get(route, function(req, res))
+
+Server speaks to database and we expose certain parts of our database through APIs for clients (browsers)
+
+Client can be a web page/browser which would make a GET request and our server will send over the relevant HTML/CSS/JS files to render the web page.
+
+Can go into POSTMAN and make a POST request after using app.post in the app.js file.
+
+CREATE:
+- To create and save data inside our MongoDB database:
+
+    - const <constantName> = new <modelName>({
+        fieldName : fieldData
+    });
+
+    - <constantName>.save();
+
+DELETE:
+- app.delete(route, function(req, res));
+
+
