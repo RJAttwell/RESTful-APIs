@@ -58,4 +58,14 @@ CREATE:
 DELETE:
 - app.delete(route, function(req, res));
 
+ROUTE HANDLERS:
+
+- app.route() method. Can create chainable router handlers for a route path. 
+- Can be used to refactor code 
+
+GET a specific article:
+- Spaces in URLs are represented as %20
+- So when performing a GET request in Postman, use, for example: 'localhost:3000/articles/united%20states'
+
+
 
